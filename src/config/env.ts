@@ -1,11 +1,7 @@
-import { Elysia } from "elysia";
-import { staticPlugin } from "@elysiajs/static";
-import { db, initDB } from "./db";
-
 /* =========================
    ENV (Issue: Langsung di index)
    Tugas: 
-   1. pindahkan ke file khusus (config/env.ts),
+   1. pindahkan ke file khusus (config/env.ts), 
    2. gunakan `export const env = {...}` untuk menyimpan data env
    3. tambahkan property DB_FILE berisi process.env.DB_FILE ke dalam `const env = {...}`
    4. cek kondisi if (!process.env.DB_FILE) console.warn("⚠ DB_FILE not set, using default database.sqlite");

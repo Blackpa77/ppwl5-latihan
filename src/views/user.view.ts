@@ -5,7 +5,21 @@
     2. Build Tailwind ke style.css, pastikan path benar.
     3. Import UserModel
     3. Ganti elemen dalam <body> jadi:
-    <div class="max-w-3xl mx-auto">
+========================= */
+
+import type { UserModel } from "../models/user.model";
+
+export const userView = (users: UserModel[]) => `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>User List</title>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-10">
+
+  <div class="max-w-3xl mx-auto">
       <h1 class="text-3xl font-bold text-blue-600 mb-6">
         User Management (Clean Structure)
       </h1>
@@ -31,4 +45,6 @@
         `).join("")}
       </div>
     </div>
-========================= */
+</body>
+</html>
+`;

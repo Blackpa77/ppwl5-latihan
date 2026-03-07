@@ -5,8 +5,8 @@
     2. gunakan export interface ...
     3. jadika id opsional -> id?: number
    ========================= */
-interface User {
+export interface User {
   id?: number;
-  name:  string;
+  name: string;
   role: string;
 }
